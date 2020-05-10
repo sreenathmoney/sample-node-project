@@ -2,7 +2,7 @@ steps:
 - name: node
   entrypoint: npm
   args: ['install', 'test', 'run', 'build']
-  artifacts:
+artifacts:
   objects:
     location: 'gs://war123/'
     paths: ['war123']

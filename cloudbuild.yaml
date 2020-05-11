@@ -2,10 +2,10 @@ steps:
 - name: node
   entrypoint: npm
   args: ['install', 'test', 'run', 'build']
-artifacts:
-  objects:
-    location: gs://[war123]/[test]
-    paths: ['helloworld.class']
+#artifacts:
+#  objects:
+#    location: gs://[war123]/[test]
+#    paths: ['helloworld.class']
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
 timeout: "1600s"

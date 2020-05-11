@@ -6,3 +6,6 @@ artifacts:
   objects:
     location: gs://[war123]/[test]
     paths: ['helloworld.class']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy"]
+timeout: "1600s"
